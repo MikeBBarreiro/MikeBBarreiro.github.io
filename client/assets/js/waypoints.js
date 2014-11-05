@@ -41,6 +41,13 @@
     offset: '100%'
   });
 
+  $('.wp7').waypoint(function(){
+    $('.wp7').addClass('animated zoomIn');
+  }, {
+    offset: '90%'
+  });
+
+  
 
 ////////////////// WAYPOINTS END ///////////////////
 

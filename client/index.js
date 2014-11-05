@@ -5,7 +5,7 @@
   //Angular Routes
   index.config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider){
     $routeProvider
-    .when('/', {templateUrl:'home/home.html', controller:'HomeCtrl'})
+    .when('/', {templateUrl:'home/index.html', controller:'HomeCtrl'})
     .otherwise({redirectTo:'/'});
   }]);
 })();
