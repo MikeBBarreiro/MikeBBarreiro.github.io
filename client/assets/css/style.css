@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Fredoka+One);
 /*
  * Author: Carlos Alvarez
  * URL: http://Alvarez.is
@@ -328,6 +329,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-position: 50% 0;
 	background-repeat: no-repeat;
 	height: 450px;
+  /*height: 950px;*/
 	position: relative;
 }
 .about {
@@ -447,7 +449,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact {
-	background-image: url(../img/contact-sep.jpg);
+	background-image: url(../img/wave.jpg);
 }
 
 #contactwrap label {
@@ -481,7 +483,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project:hover .photo-wrapper {
-  background-color: #2f2f2f;
+  background-color: #6D86FC;
 	background-image:url(../img/zoom.png);
 	background-repeat:no-repeat;
 	background-position:center;
@@ -516,10 +518,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project1:hover{
-  color: #F53F49;
+  color: black;
   /*text-decoration: none;*/
 }
 
 .theworks{
   color: white;
+}
+
+.thankYou{
+  text-align: center;
+  margin-top: 100px;
+  color: black;
+  font-family: 'Fredoka One', san-serif;
+
+}
+.contactBelow{
+  text-align: center;
+  margin-top: 10px;
+  color: black;
+  font-family: 'Fredoka One', san-serif;
+
+}
+
+.lastContain{
+  /*background-color: RGBA(78, 77, 78, 0.5);*/
+  /*width: 96px;*/
+  /*border: 2px solid black;*/
+  text-shadow: 5px 5px 20px black;
 }

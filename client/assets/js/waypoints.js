@@ -24,7 +24,7 @@
   });
 
   $('.wp4').waypoint(function(){
-    $('.wp4').addClass('animated swing');
+    $('.wp4').addClass('animated rubberBand');
   }, {
     offset: '100%'
   });
