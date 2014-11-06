@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 }
 .about {
-	background-image: url(../img/about-sep.jpg);
+	background-image: url(../img/me2.jpg);
 }
 
 /* Portfolio Wrap Section */
@@ -380,6 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	border-bottom: solid 2px transparent;
+  /*border: 1px solid #6D86FC;*/
 }
 
 #portfoliowrap .proc:hover {
@@ -468,6 +469,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
   transition: background-color 0.4s;
+  border: 1px solid black;
 }
 .project .overlay {
   position: absolute;
@@ -492,6 +494,7 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0;
 	right: 0;
 	position: relative;
+  border: 2px solid black;
 }
 .project:hover .photo {
   opacity: 10;
@@ -510,16 +513,24 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 25px;
 }
 
-/* other */
+/*//////// other ///////// */
 .project1{
-  margin-left: 140px;
+  /*margin-left: 140px;*/
   color: white;
   text-decoration: none;
+  text-align: center;
+  margin-left: 55%;
 }
 
 .project1:hover{
   color: black;
   /*text-decoration: none;*/
+}
+
+.checkOutTheCode{
+  font-size: 50%;
+  margin-left: 50px;
+  margin-top: 15px;
 }
 
 .theworks{
@@ -556,6 +567,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #CABEA4;
 }
 
+
 /* stars */
 .paralax0{
   height: 25px;
@@ -574,7 +586,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 15px;
   width: 19px;
   margin-left: 10%;
-  margin-top: 20%;
+  margin-top: 25%;
   z-index: 0;
 }
 .paralax1{
@@ -613,4 +625,29 @@ h1, h2, h3, h4, h5, h6 {
   transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: "FlipH";
+}
+
+.githubIcon{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  margin-left: -60px;
+}
+
+.hue-color-wheel {
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 60s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
 }

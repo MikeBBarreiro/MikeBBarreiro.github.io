@@ -22,7 +22,8 @@
   }, {
     offset: '100%'
   });
-
+  
+///////////// My Latest Works ////////////
   $('.wp4').waypoint(function(){
     $('.wp4').addClass('animated rubberBand');
   }, {
@@ -40,6 +41,7 @@
   }, {
     offset: '100%'
   });
+//////////// END my latest works //////////
 
   $('.wp7').waypoint(function(){
     $('.wp7').addClass('animated zoomIn');
@@ -47,7 +49,15 @@
     offset: '90%'
   });
 
-  
+// More Info //
+  $('.wp8').waypoint(function(){
+    $('.wp8').addClass('animated bounceInUp');
+  }, {
+    offset: '100%'
+  });
+
+
+
 
 ////////////////// WAYPOINTS END ///////////////////
 
