@@ -22,7 +22,7 @@
   }, {
     offset: '100%'
   });
-  
+
 ///////////// My Latest Works ////////////
   $('.wp4').waypoint(function(){
     $('.wp4').addClass('animated rubberBand');
