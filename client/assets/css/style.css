@@ -566,6 +566,9 @@ h1, h2, h3, h4, h5, h6 {
 .smdivider{
   color: #CABEA4;
 }
+.smdivider2{
+  color: #747474;
+}
 
 
 /* stars */
@@ -663,3 +666,39 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: #6D86FC;
 }
+
+.theExperience{
+  color: white;
+  /*margin-left: 10px;*/
+  margin-top: 50px;
+}
+.theEP{
+  text-align: left;
+  color: white;
+  font-size: 12px;
+}
+.expDiv{
+  width: 500px;
+  height: 300px;
+  margin-left: 40px;
+  /*border: 2px solid black;*/
+}
+
+/*-----Indicator cirlce-------- */
+.feDiv{
+  text-align: center;
+  border-bottom: 2px solid #FF6279;
+}
+.beDiv{
+  text-align: center;
+  border-bottom: 2px solid #6788F7;
+}
+.mgDiv{
+  text-align: center;
+  border-bottom: 2px solid #8C78FC;
+}
+.osrcDiv{
+  text-align: center;
+  border-bottom: 2px solid #47F9AC;
+}
+/*----------------END---------------*/
