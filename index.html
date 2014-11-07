@@ -18,6 +18,9 @@
     <link href="client/assets/css/animate.css" rel="stylesheet">
     <link href="client/assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="client/assets/js/fancybox/jquery.fancybox.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="client/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="client/assets/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="client/assets/css/component.css" />
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -52,16 +55,29 @@
 	</nav>
 
 	<section id="home" name="home"></section>
-	<div id="headerwrap">
-		<div class="container">
-			<div class="row">
+
+	<!-- <div id="headerwrap">
+		<div class="container"> -->
+
+      <div class="container demo-1">
+        <div class="content">
+          <div id="large-header" class="large-header">
+            <canvas id="demo-canvas"></canvas>
+            <h1 class="main-title animated fadeIn">Michael <span class="thin">Barreiro</span></h1>
+          </div>
+        </div>
+      </div>
+
+			<!-- <div class="row">
 				<div class="col-md-6 col-md-offset-3">
 					<h1 class='animated fadeInUp'>Michael Barreiro</h1>
-          <!-- <h1> {{title}} </h1> -->
-				</div>
-			</div><! --/row -->
-		</div><! --/container -->
-	</div><! --/headerwrap -->
+				</div> -->
+			<!-- </div> -->
+      <! --/row -->
+		<!-- </div> -->
+    <! --/container -->
+	<!-- </div> -->
+  <! --/headerwrap -->
 
 	<section id="about" name="about"></section>
 	<div id="aboutwrap">
@@ -118,7 +134,7 @@
     <h1 class='smdivider2'> - </h1>
     <div class='expDiv'>
       <h3 class='theExperience wp9'> The Experience </h3>
-      <p class='theEP wp9'> It all started in the new year of 2014. Originnaly I studied in Medical Care until I stumbled across
+      <p class='theEP wp9'> It all started in the new year of 2014. Originally I studied in Medical Care until I stumbled across
          <a style='color:#47F9AC;' href='http://nashvillesoftwareschool.com/'>Nashville Softwre School (NSS).</a>
             Since the beginning of my attendence at NSS Cohort VI on June 7th, 2014, my rebirth began.
          I have learned the fundamentals of web-development and programing. Learning langages like HTML5, CSS3, javascript, and so much more.
@@ -462,6 +478,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+  <script src="client/assets/js/TweenLite.min.js"></script>
+  <script src="client/assets/js/EasePack.min.js"></script>
+  <script src="client/assets/js/rAF.js"></script>
+  <script src="client/assets/js/demo-1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src='client/assets/js/waypoints.min.js'></script>
   <script src='client/assets/js/waypoints.js'></script>
