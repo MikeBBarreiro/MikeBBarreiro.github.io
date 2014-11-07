@@ -62,6 +62,12 @@
     offset: '100%'
   });
 
+  $('.wp10').waypoint(function(){
+    $('.wp10').addClass('animated fadeInRightBig');
+  }, {
+    offset: '100%'
+  });
+
 
 
 

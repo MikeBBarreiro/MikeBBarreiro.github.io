@@ -538,15 +538,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .thankYou{
-  text-align: center;
+  text-align: left;
   margin-top: 100px;
+  margin-left: 50px;
   color: black;
   /*font-family: 'Fredoka One', san-serif;*/
 
 }
 .contactBelow{
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
+  margin-left: 73px;
   color: black;
   /*font-family: 'Fredoka One', san-serif;*/
 
@@ -559,15 +561,15 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 5px 5px 20px black;
 }
 
-/*.wp1{*/
-  /*text-shadow: 10px 5px 5px black;*/
-/*}*/
-
 .smdivider{
   color: #CABEA4;
 }
 .smdivider2{
   color: #747474;
+}
+
+.moreComing{
+  margin-top: -100px;
 }
 
 
