@@ -391,7 +391,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .portfolio {
 	background-image: url(../img/neb2.jpg);
-  background-size: cover;
+  /*background-size: cover;*/
 }
 
 /* Service Wrap */
@@ -453,7 +453,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact {
 	background-image: url(../img/wave.jpg );
-  background-size: cover;
+  /*background-size: cover;*/
 }
 
 #contactwrap label {
