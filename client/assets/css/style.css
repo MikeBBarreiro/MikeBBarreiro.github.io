@@ -684,8 +684,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
 }
 .expDiv{
-  width: 500px;
-  height: 300px;
+  /*width: 500px;*/
+  width: 60%;
+  /*height: 300px;*/
+  height: 70%;
   margin-left: 40px;
   /*border: 2px solid black;*/
 }
