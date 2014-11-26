@@ -71,16 +71,6 @@
     offset: '100%'
   });
 
-/*
-  $(document).ready(function(){
-    $("button").click(function(){
-      $(".s").animate({left:'350px', top:'400px'}, 200, function(){
-
-      });
-    });
-  });
-*/
-
 
 ////////////////// WAYPOINTS END ///////////////////
 
