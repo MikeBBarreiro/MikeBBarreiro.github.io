@@ -90,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
    MENU CONFIGURATION
    ========================================================================== */
 
+
 .menu {
 	position: fixed;
 	right: -200px;
@@ -832,4 +833,15 @@ h1, h2, h3, h4, h5, h6 {
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}
+
+/*--------SHOOTING----STAR---------*/
+.a{
+  /*margin-bottom: -100%;*/
+  margin-top: -65%;
+  margin-left: -50%;
+  height:200px;
+  width:250px;
+  position:absolute;
+  /*-webkit-animation-delay: 300.5s;*/
 }
