@@ -336,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .about {
 	background-image: url(../img/me2.jpg);
-  /*background-size: cover;*/
+  background-size: cover;
 }
 
 /* Portfolio Wrap Section */
@@ -838,8 +838,8 @@ h1, h2, h3, h4, h5, h6 {
 /*--------SHOOTING----STAR---------*/
 .a{
   /*margin-bottom: -100%;*/
-  margin-top: -65%;
-  margin-left: -50%;
+  margin-top: -16%;
+  margin-left: 5%;
   height:200px;
   width:250px;
   position:absolute;

@@ -2,7 +2,10 @@
   'use strict';
 
   $(document).ready(function(){
-    $(".a").delay(1100).animate({left:'1850px', top:'1500px'}, 1000, function(){
+    // $(".a").delay(1100).animate({left:'1850px', top:'1500px'}, 1000, function(){
+    //
+    // });
+    $(".a").delay(1100).animate({left:'80%', top:'120%'}, 1000, function(){
 
     });
   });
