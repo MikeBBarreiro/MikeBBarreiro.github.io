@@ -291,8 +291,10 @@ h1, h2, h3, h4, h5, h6 {
 	/*margin-bottom: 80px;*/
   /*padding: 65px;*/
   padding-top: 65px;
-  background-image: url(../img/VzAhbw9.jpg);
-  background-size: cover;
+  background-color: white;
+  /*background-image: url('http://www.wallchan.com/images/sandbox/22728-storm-trooper-star-wars.jpg');*/
+  /*background-image: url(../img/VzAhbw9.jpg);*/
+  /*background-size: cover;*/
   /*background-color: red;*/
 }
 
