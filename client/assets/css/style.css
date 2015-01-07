@@ -449,8 +449,9 @@ p{
 /* Testimonials Wrap */
 #testimonials {
 	display: block;
-	margin-top: 80px;
-	margin-bottom: 80px;
+  margin-top: 20px;
+	/*margin-top: 80px;*/
+	/*margin-bottom: 80px;*/
 	background-color: #f3f3f3;
 }
 

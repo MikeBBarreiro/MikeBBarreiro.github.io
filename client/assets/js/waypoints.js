@@ -12,7 +12,7 @@
 ////////////////// WAYPOINTS START ///////////////////
 
   $('.wp1').waypoint(function(){
-    $('.wp1').addClass('animated fadeInLeft');
+    $('.wp1').addClass('animated fadeIn');
   }, {
     offset: '100%'
   });
@@ -23,11 +23,11 @@
     offset: '100%'
   });
 
-  $('.wp3').waypoint(function(){
-    $('.wp3').addClass('animated flipInY');
-  }, {
-    offset: '100%'
-  });
+  // $('.wp3').waypoint(function(){
+  //   $('.wp3').addClass('animated flipInY');
+  // }, {
+  //   offset: '100%'
+  // });
 
 ///////////// My Latest Works ////////////
   $('.wp4').waypoint(function(){
