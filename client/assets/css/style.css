@@ -296,10 +296,27 @@ p{
   /*padding: 65px;*/
   padding-top: 65px;
   background-color: white;
-  /*background-image: url('http://www.wallchan.com/images/sandbox/22728-storm-trooper-star-wars.jpg');*/
-  /*background-image: url(../img/VzAhbw9.jpg);*/
+  /*background-image: url('http://www.background.uz/_ph/21/856307306.jpg');*/
+  /*background-image: url(../img/abstract-wallpaper.jpg);*/
   /*background-size: cover;*/
-  /*background-color: red;*/
+  background-color: #2F2727;
+  background-image: url(images/radial_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(white), to(#9F9F9F));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, white, #9F9F9F);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, white, #9F9F9F);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, white, #9F9F9F);
+
 }
 
 .aboutmeP{
