@@ -31,6 +31,39 @@ textarea {
  * Customize the background color to match your design.
  */
 
+
+.thinner{
+  
+}
+
+ .contruction{
+   position: absolute;
+   margin: 0px;
+   padding: 0px;
+   color: #F9F1E9;
+   text-align: center;
+   top: 70%;
+   left: 50%;
+   transform: translate3d(-50%, -50%, 0px);
+}
+ }
+
+ .pointLess{
+   padding:10px;
+   font-size: 15px;
+   color: white;
+   font-family: "Lato" sans-serif;
+ }
+
+div.a {
+  width: 80px;
+  height: 50px;
+  background-image: url('../img/0059.gif');
+  background-size: cover;
+  position:fixed;
+
+}
+
 ::-moz-selection {
     background: #f2c2c9;
     color: #a4003a;
