@@ -31,11 +31,6 @@ textarea {
  * Customize the background color to match your design.
  */
 
-
-.thinner{
-  
-}
-
  .contruction{
    position: absolute;
    margin: 0px;
@@ -46,13 +41,12 @@ textarea {
    left: 50%;
    transform: translate3d(-50%, -50%, 0px);
 }
- }
 
- .pointLess{
-   padding:10px;
-   font-size: 15px;
-   color: white;
-   font-family: "Lato" sans-serif;
+ .sideNavP{
+   padding:10px !important;
+   font-size: 15px !important;
+   color: white !important;
+   font-family: "Lato" sans-serif !important;
  }
 
 div.a {
