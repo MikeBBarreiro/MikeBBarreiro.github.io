@@ -33,6 +33,7 @@
 
   <body data-spy="scroll" data-offset="0" data-target="#theMenu">
 
+
 	<!-- <div id="headerwrap">
 		<div class="container"> -->
 
@@ -43,20 +44,54 @@
 
             <!-- <img class='a' src="client/assets/img/falling-star2.png"> -->
             <canvas id="demo-canvas"></canvas>
-            <h5 class="animated bounce News" style="text-align: center; margin-top: -200px;"><span style="color: black;">NEWS:</span> Hello! Im here to say that complete re-construction of this side is almost DONE. <br/>
+            <!-- <h5 class="animated bounce News" style="text-align: center; margin-top: -200px;"><span style="color: black;">NEWS:</span> Hello! Im here to say that complete re-construction of this side is almost DONE. <br/>
               There is still some time needed to completly get this re constructed portfolio out the door into the wild web.<br/>
               So to give you an idea when re-construction is complete, there will soon be a Count Down On this landing page <br/>
               to tell you when the release will be! So check back soon.
-            </h5>
-            <h1 class="main-title animated fadeInDown">Michael <span class="thin">Barreiro</span></h1>
-            <h3 class='contruction animated fadeIn'>We are under <span class="thinner">Construction</span></h3>
-            
+            </h5> -->
+            <div class="container">
+              <h1 class="main-title animated fadeInDown">Michael <span class="thin">Barreiro</span></h1>
+              <!-- <h3 class='contruction animated fadeIn'>Count down till <span class="thinner">new UI</span></h3> -->
+              <center class="animated fadeIn">
+                <!-- COUNT DOWN CODE -->
+              <table id="table" border="0">
+                  <tr>
+                      <td align="center" colspan="6"><div class="numbers" id="count2" style="padding: 5px 0 0 0; "></div></td>
+                  </tr>
+                  <tr id="spacer1">
+                      <td align="center" ><div class="numbers" ></div></td>
+                      <td align="center" ><div class="numbers" id="dday"></div></td>
+                      <td align="center" ><div class="numbers" id="dhour"></div></td>
+                      <td align="center" ><div class="numbers" id="dmin"></div></td>
+                      <td align="center" ><div class="numbers" id="dsec"></div></td>
+                      <td align="center" ><div class="numbers" ></div></td>
+                  </tr>
+                  <tr id="spacer2">
+                      <td align="center" ><div class="title" ></div></td>
+                      <td align="center" ><div class="title" id="days">Days</div></td>
+                      <td align="center" ><div class="title" id="hours">Hours</div></td>
+                      <td align="center" ><div class="title" id="minutes">Minutes</div></td>
+                      <td align="center" ><div class="title" id="seconds">Seconds</div></td>
+                      <td align="center" ><div class="title" ></div></td>
+                  </tr>
+              </table>
+              </center>
+              <h4 class="animated fadeInUp" 
+              style="text-align: center;
+              font-family: 'Lato', sans-serif;
+              text-shadow: 0 0 5px black;">
+                Count down for new UI
+              </h4>
+            </div>
+
+            <!-- COUNT DOWN CODE END -->
           </div>
         </div>
       </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+  <script src="client/assets/js/countdown.js"></script>
   <script src="client/assets/js/TweenLite.min.js"></script>
   <script src="client/assets/js/EasePack.min.js"></script>
   <script src="client/assets/js/rAF.js"></script>

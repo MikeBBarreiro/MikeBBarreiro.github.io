@@ -20,7 +20,7 @@
 
 .main-title{
   text-align: center;
-  margin-top: -28%;
+  margin-top: -40%;
   font-size: 60px;
   font-family: 'Lato', sans-serif;
 }
@@ -152,6 +152,35 @@ body {
   background-image: url('../img/falling-star2.png');
   background-size: 100% 100%;
   /*-webkit-animation-delay: 300.5s;*/
+}
+
+/*COUNT DOWN*/
+.numbers {
+    /*width: 55px;*/
+    text-align: center;
+    font-family: Arial;
+    font-size: 68px;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 0 0 5px black;
+    /*font-weight: bold;   /* options are normal, bold, bolder, lighter */
+    /*font-style: normal;  /* options are normal or italic */
+    color: white;      /* change color using the hexadecimal color codes for HTML */
+}
+.title {    /* the styles below will affect the title under the numbers, i.e., "Days", "Hours", etc. */
+    width: 55px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    text-shadow: 0 0 5px black;
+    /*font-weight: bold;   /* options are normal, bold, bolder, lighter */
+    color: white;      /* change color using the hexadecimal color codes for HTML */
+}
+
+#table {
+    width: 600px;
+    height: 68px;
+    border-style: none;
+    background-color: transparent;
 }
 
     Status API Training Shop Blog About Pricing
