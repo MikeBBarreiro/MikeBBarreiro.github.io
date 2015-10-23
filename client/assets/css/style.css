@@ -5,7 +5,17 @@
 /* ==========================================================================
    Base Styles, Bootstrap Modifications & Fonts Import
    ========================================================================== */
-
+   .star-Destroyer{
+     height: 1px;
+     width:2px;
+     background-image: url('../img/stardestroyer.png');
+     background-size: 100% 100%;
+     position: absolute;
+     /*margin-top: -350px;*/
+     /*margin-left: 980px;*/
+     margin-top: -30%;
+     margin-left: 70%;
+   }
 
  .contruction{
    position: absolute;
