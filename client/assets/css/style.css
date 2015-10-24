@@ -104,7 +104,14 @@ body {
 /* ==========================================================================
    MENU CONFIGURATION
    ========================================================================== */
-
+.vader{
+  height: 300px;
+  width: 250px;
+  background-image: url('../img/Darth-Vader.png');
+  background-size: 100% 100%;
+  margin-left: -10px;
+  margin-top: -50px;
+}
 
 .menu {
 	position: fixed;
