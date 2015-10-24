@@ -13,8 +13,8 @@
     		// Animation complete.
   	});
 
-    var starship = $(".star-Destroyer").delay(2100).animate({right:'60%', top:'120%', height: '100px', width:'200px'}, 10000, function(){
-    });
+    // var starship = $(".star-Destroyer").delay(2100).animate({top:'30%', right:'70%', height: '100px', width:'200px'}, 10000, function(){
+    // });
 
   });
 ////////////////// WAYPOINTS START ///////////////////
