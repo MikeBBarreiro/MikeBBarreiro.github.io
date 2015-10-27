@@ -113,7 +113,6 @@ body {
   /*margin-top: -70px;*/
   z-index: 99;
   display: inline-block;
-  bottom: 0;
 }
 .lock{
   height: 300px;
@@ -125,7 +124,7 @@ body {
   z-index: 99;
   float: right;
   display: inline-block;
-  bottom: 0;
+  bottom 0;
 }
 
 .menu {
