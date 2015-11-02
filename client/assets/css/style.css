@@ -104,28 +104,6 @@ body {
 /* ==========================================================================
    MENU CONFIGURATION
    ========================================================================== */
-.chief{
-  height: 300px;
-  width: 500px;
-  background-image: url('../img/Render-MasterChief-05-png.png');
-  background-size: 100% 100%;
-  margin-left: -10px;
-  /*margin-top: -70px;*/
-  z-index: 99;
-  display: inline-block;
-}
-.lock{
-  height: 300px;
-  width: 500px;
-  background-image: url('../img/Render-Locke-06-png.png');
-  background-size: 100% 100%;
-  margin-left: -10px;
-  /*margin-top: -70px;*/
-  z-index: 99;
-  float: right;
-  display: inline-block;
-  bottom 0;
-}
 
 .menu {
 	position: fixed;
