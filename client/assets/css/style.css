@@ -17,6 +17,10 @@
      margin-left: 70%;
    }*/
 
+  canvas{
+    width: 100%;
+  }
+
  .contruction{
    position: absolute;
    margin: 0px;
