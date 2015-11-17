@@ -247,23 +247,22 @@ hr {
 }
 #headerwrap {
     /*background: url(../img/bvs-2.jpg) no-repeat center top;*/
-    background: url(../img/neb.jpg);
+    background: url(../img/neb.jpg) no-repeat center top;
     background-attachment: fixed;
     margin-top: -10px;
     padding-top: 20px;
     text-align: center;
-    /*background-position: center center;*/
-    background-size: 100% 100%;
+    background-position: center center;
     /*min-height: 720px;*/
     width: 100%;
-    /*-webkit-background-size: 100%;
+    -webkit-background-size: 100%;
     -moz-background-size: 100%;
-    -o-background-size: 100%;*/
-    /*background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100% 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;*/
+    background-size: cover;
 }
 /*#headerwrap h1 {
     margin-top: 130px;
