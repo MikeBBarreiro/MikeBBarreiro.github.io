@@ -101,7 +101,7 @@
 
 @media screen and (max-width: 400px){
   #headerwrap{
-    height: 700px;
+    background-image: url('../img/neb-small.jpg') !important;
   }
 }
 
