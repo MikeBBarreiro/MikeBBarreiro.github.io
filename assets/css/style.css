@@ -34,6 +34,10 @@
     background-size: cover;*/
 }
 
+#videoImg{
+  display: none;
+}
+
 
 /*--------SHOOTING----STAR---------*/
 .a{
@@ -71,10 +75,26 @@
     margin-top: -60px;
   }
 }
+@media screen and (max-width: 400px){
+  #vid{
+    width: 400px;
+    margin-top: -60px;
+    display: none;
+  }
+  #videoImg{
+    display: block;
+    height: 220px;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 320px){
   #vid{
     width: 400px;
     margin-top: -60px;
+  }
+  #videoImg{
+    display: block;
   }
 }
 
@@ -96,12 +116,6 @@
     bottom: -12px;
     left: -12px;
     opacity: 0;
-  }
-}
-
-@media screen and (max-width: 400px){
-  #headerwrap{
-    background-image: url() !important;
   }
 }
 
