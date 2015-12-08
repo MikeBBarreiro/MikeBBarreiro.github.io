@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
-
+/*html,body,.page-container{height: 100%;}*/
+/*body > .page-container { height: auto; min-height: 100%; }*/
 body {
     /*background-color: RGBA(59, 59, 59, 1);*/
+
     font-family: Lato;
     font-weight: 300;
     font-size: 16px;
@@ -36,7 +38,7 @@ h4{
 
 #version{
   position: fixed;
-  margin-top: 52%;
+  margin-top: 30px;
   margin-left: 20px;
   z-index: 99;
   text-shadow: 0 0 3px black;
@@ -765,12 +767,4 @@ div.a {
 .sublteani{
   margin-top: -50px;
   padding: 10px;
-}
-
-.versoin-footer{
-  background-color: red;
-  height: 30px;
-  width: 100%;
-  vertical-align: bottom;
-  position: fixed;
 }

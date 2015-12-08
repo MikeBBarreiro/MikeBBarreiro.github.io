@@ -7,7 +7,10 @@
 		$('#theMenu').toggleClass('menu-open');
 	});
 
+	var versionNumb = $('#version').html();
+
 	$(document).ready(function(){
+		Command: toastr["info"]('This site is at version ' + versionNumb);
   	animateDiv();
 		$('.a').click(function(){
       var explotion = $(".a").addClass("changeBackground");
@@ -16,6 +19,27 @@
   		});
    	});
 	});
+
+
+	toastr.options = {
+		"closeButton": true,
+	  "debug": false,
+	  "newestOnTop": false,
+	  "progressBar": true,
+	  "positionClass": "toast-top-right",
+	  "preventDuplicates": false,
+	  "onclick": null,
+	  "showDuration": "300",
+	  "hideDuration": "1000",
+	  "timeOut": "5000",
+	  "extendedTimeOut": "1000",
+	  "showEasing": "swing",
+	  "hideEasing": "linear",
+	  "showMethod": "fadeIn",
+	  "hideMethod": "fadeOut"
+};
+//
+// toastr.info("This is a message <img src=\"http://news.bbcimg.co.uk/media/images/71977000/jpg/_71977649_71825880.jpg\" />", "Toaster Popup");
 
 
 function makeNewPosition(){
