@@ -76,6 +76,11 @@
   }
 }
 @media screen and (max-width: 400px){
+  #demo-canvas{
+    display: none;
+  }
+}
+@media screen and (max-width: 400px){
   #vid{
     width: 400px;
     margin-top: -60px;
@@ -97,6 +102,7 @@
     display: block;
   }
 }
+
 
 /*HOVER EFFECTS*/
 @-webkit-keyframes hvr-ripple-out {
