@@ -7,6 +7,15 @@
 		$('#theMenu').toggleClass('menu-open');
 	});
 
+
+	$(".bg").interactive_bg({
+	   strength: 25,
+	   scale: 1.05,
+	   animationSpeed: "100ms",
+	   contain: true,
+	   wrapContent: false
+	 });
+
 	var versionNumb = $('#version').html();
 
 	$(document).ready(function(){
