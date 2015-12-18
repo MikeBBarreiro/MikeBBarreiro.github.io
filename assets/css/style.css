@@ -120,21 +120,21 @@
     display: none;
   }
   .bg{
-    /*height: 480px !important;*/
+    height: 480px;
     width: 100%;
   }
 }
 /*Iphone6*/
 @media screen and (max-width: 375px){
   .bg{
-    /*height: 630px;*/
+    height: 630px;
     width: 100%;
   }
 }
 /*Iphone6+*/
 @media screen and (max-width: 414px){
   .bg{
-    /*height: 736px !important;*/
+    height: 736px;
     width: 100%;
   }
 }
@@ -144,7 +144,7 @@
     display: none;
   }
   .bg{
-    /*height: 1024px;*/
+    height: 1024px;
     width: 100%;
   }
 }
