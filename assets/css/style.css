@@ -100,7 +100,7 @@
   }
 }
 /*Iphone4*/
-@media screen and (max-width: 320px){
+@media screen and (max-width: 330px){
   #vid{
     width: 400px;
     margin-top: -60px;
@@ -129,21 +129,12 @@
   }
 }
 /*Iphone6*/
-@media screen and (max-width: 375px){
+@media screen and (max-width: 380px){
   .bg{
     height: 630px;
     width: 100%;
   }
 }
-/*Iphone6+*/
-@media screen and (max-width: 414px){
-  .bg{
-    height: 736px;
-    width: 100%;
-  }
-}
-
-
 /*HOVER EFFECTS*/
 @-webkit-keyframes hvr-ripple-out {
   100% {
