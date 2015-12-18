@@ -261,7 +261,7 @@ hr {
 /*This ID is kept for sanity check DONT USE*/
 #headerwrap {
     /*background: url(../img/bvs-2.jpg) no-repeat center top;*/
-    background: url(../img/neb.jpg) no-repeat center top;
+    /*background: url(../img/neb.jpg) no-repeat center top;*/
     background-attachment: fixed;
     margin-top: -10px;
     padding-top: 20px;

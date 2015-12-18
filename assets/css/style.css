@@ -100,20 +100,13 @@
   }
 }
 /*Iphone4*/
-@media screen and (max-width: 330px){
+@media screen and (max-width: 320px){
   #vid{
     width: 400px;
     margin-top: -60px;
   }
   #videoImg{
     display: block;
-  }
-  .large-header{
-    display: none;
-  }
-  .bg{
-    height: 480px;
-    width: 100%;
   }
 }
 @media screen and (max-width: 970px){
@@ -128,13 +121,23 @@
     height: 0px;
   }
 }
+
 /*Iphone6*/
-@media screen and (max-width: 380px){
+@media screen and (max-width: 375px){
   .bg{
     height: 630px;
     width: 100%;
   }
 }
+/*Iphone6+*/
+@media screen and (max-width: 414px){
+  .bg{
+    height: 736px;
+    width: 100%;
+  }
+}
+
+
 /*HOVER EFFECTS*/
 @-webkit-keyframes hvr-ripple-out {
   100% {
