@@ -103,6 +103,13 @@
   }
 }
 
+@media screen and (max-width: 375px){
+  .bg{
+    height: 630px;
+    width: 100%;
+  }
+}
+
 
 /*HOVER EFFECTS*/
 @-webkit-keyframes hvr-ripple-out {
