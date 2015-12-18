@@ -112,7 +112,7 @@
     display: none;
   }
   .bg{
-    height: 480px !important;
+    height: 480px;
     width: 100%;
   }
 }
