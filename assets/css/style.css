@@ -125,12 +125,12 @@
   }
 }
 /*Iphone6*/
-@media screen and (max-width: 375px){
+/*@media screen and (max-width: 375px){
   .bg{
     height: 630px;
     width: 100%;
   }
-}
+}*/
 /*Iphone6+*/
 @media screen and (max-width: 414px){
   .bg{
