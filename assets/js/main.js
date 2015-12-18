@@ -15,6 +15,7 @@
 	   contain: true,
 	   wrapContent: false
 	 });
+	 
 
 	var versionNumb = $('#version').html();
 

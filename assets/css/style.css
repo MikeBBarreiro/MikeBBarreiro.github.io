@@ -102,10 +102,31 @@
     display: block;
   }
 }
-
+/*Iphone4*/
+@media screen and (max-width: 320px){
+  .bg{
+    height: 480px !important;
+    width: 100%;
+  }
+}
+/*Iphone6*/
 @media screen and (max-width: 375px){
   .bg{
     height: 630px;
+    width: 100%;
+  }
+}
+/*Iphone6+*/
+@media screen and (max-width: 414px){
+  .bg{
+    height: 736px !important;
+    width: 100%;
+  }
+}
+/*Ipad*/
+@media screen and (max-width: 768px){
+  .bg{
+    height: 1024px;
     width: 100%;
   }
 }
