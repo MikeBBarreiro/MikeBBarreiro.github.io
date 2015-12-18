@@ -62,11 +62,18 @@
     margin-top: 10px;
   }
 }
-
+/*IPAD*/
 @media screen and (max-width: 768px){
   #vid{
     width: 360px;
     margin-top: -60px;
+  }
+  .large-header{
+    display: none;
+  }
+  .bg{
+    height: 1024px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 800px){
@@ -92,7 +99,7 @@
     width: 100%;
   }
 }
-
+/*Iphone4*/
 @media screen and (max-width: 320px){
   #vid{
     width: 400px;
@@ -100,6 +107,13 @@
   }
   #videoImg{
     display: block;
+  }
+  .large-header{
+    display: none;
+  }
+  .bg{
+    height: 480px !important;
+    width: 100%;
   }
 }
 @media screen and (max-width: 970px){
@@ -114,16 +128,6 @@
     height: 0px;
   }
 }
-/*Iphone4*/
-@media screen and (max-width: 320px){
-  .large-header{
-    display: none;
-  }
-  .bg{
-    height: 480px;
-    width: 100%;
-  }
-}
 /*Iphone6*/
 @media screen and (max-width: 375px){
   .bg{
@@ -135,16 +139,6 @@
 @media screen and (max-width: 414px){
   .bg{
     height: 736px;
-    width: 100%;
-  }
-}
-/*Ipad*/
-@media screen and (max-width: 768px){
-  .large-header{
-    display: none;
-  }
-  .bg{
-    height: 1024px;
     width: 100%;
   }
 }
