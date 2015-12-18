@@ -102,8 +102,17 @@
     display: block;
   }
 }
+/*laptops*/
+@media screen and (min-width: 980px){
+  .bg{
+    height: 0px;
+  }
+}
 /*Iphone4*/
 @media screen and (max-width: 320px){
+  .large-header{
+    display: none;
+  }
   .bg{
     height: 480px !important;
     width: 100%;
@@ -125,6 +134,9 @@
 }
 /*Ipad*/
 @media screen and (max-width: 768px){
+  .large-header{
+    display: none;
+  }
   .bg{
     height: 1024px;
     width: 100%;

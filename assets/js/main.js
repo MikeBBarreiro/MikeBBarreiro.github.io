@@ -9,13 +9,13 @@
 
 
 	$(".bg").interactive_bg({
-	   strength: 25,
+	   strength: 15,
 	   scale: 1.05,
 	   animationSpeed: "100ms",
 	   contain: true,
 	   wrapContent: false
 	 });
-	 
+
 
 	var versionNumb = $('#version').html();
 
