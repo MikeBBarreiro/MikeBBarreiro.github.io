@@ -7,28 +7,33 @@
 		$('#theMenu').toggleClass('menu-open');
 	});
 
-
-	$(".bg").interactive_bg({
-	   strength: 15,
-	   scale: 1.05,
-	   animationSpeed: "100ms",
-	   contain: true,
-	   wrapContent: false
-	 });
-
-
 	var versionNumb = $('#version').html();
 
 	$(document).ready(function(){
-		Command: toastr["info"]('This site is at version ' + versionNumb);
-  	animateDiv();
-		$('.a').click(function(){
-      var explotion = $(".a").addClass("changeBackground");
-      explotion.fadeOut( 200, function() {
-    		// Animation complete.
-  		});
-   	});
+		$(".bg").interactive_bg({
+		   strength: 15,
+		   scale: 1.05,
+		   animationSpeed: "100ms",
+		   contain: true,
+		   wrapContent: false
+		 });
+		 Command: toastr["info"]('This site is at version ' + versionNumb);
+   	animateDiv();
+ 		$('.a').click(function(){
+       var explotion = $(".a").addClass("changeBackground");
+       explotion.fadeOut( 200, function() {
+     		// Animation complete.
+   		});
+    	});
 	});
+
+  // change background size on window resize
+  $(window).resize(function() {
+      $(".bg > .ibg-bg").css({
+        width: $(window).outerWidth(),
+        height: $(window).outerHeight()
+      })
+   })
 
 
 	toastr.options = {

@@ -102,6 +102,12 @@
     display: block;
   }
 }
+@media screen and (max-width: 970px){
+  .large-header{
+    display: none;
+  }
+}
+
 /*laptops*/
 @media screen and (min-width: 980px){
   .bg{
