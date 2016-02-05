@@ -378,7 +378,7 @@
               <!-- <form>
                 <input type="button" value="Download" onClick="window.location.href='http://mikebbarreiro.github.io/downloads/Michaels-Resume.pdf'" />
               </form> -->
-              <a href="Resume/Michaels-Resume.pdf" onclick="_gaq.push(['_trackEvent','Download','ResumeDownload1','http://mikebbarreiro.github.io/'])" download="Michaels-Resume.pdf">
+              <a href="Resume/Michaels-Resume.pdf" onclick="ga('send', 'event', { eventCategory: 'Download', eventAction: 'resume', eventLabel: 'ResumeDownload1'});" download="Michaels-Resume.pdf">
                 <button type="button" class="btn btn-custom btn-sm hvr-bounce-in">Download</button>
               </a>
             </p>
