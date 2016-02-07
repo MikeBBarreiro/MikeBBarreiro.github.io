@@ -16,7 +16,7 @@
 	// var att = document.createAttribute("data-ibg-bg");
 	// att.value = bkgrndimg;
 	// $('.bg').setAttributeNode(att);
-  console.log('Date: ', day, today);
+  // console.log('Date: ', day, today);
 
 
 	$(".bg").interactive_bg({
