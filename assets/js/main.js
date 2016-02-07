@@ -10,7 +10,9 @@
   ];
 	var today = new Date();
   var day = today.getDate();
+	var bkgrndimg = backImg[day % backImg.length];
   document.getElementById('daily').style.backgroundImage = 'url(' +backImg[day % backImg.length]+ ')'
+	$('.bg').setAttribute('data-ibg-bg', bkgrndimg);
   console.log('Date: ', day, today);
 
 
