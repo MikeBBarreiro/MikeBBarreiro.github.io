@@ -260,7 +260,7 @@ hr {
 #daily{
   background-repeat: no-repeat;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     .headerwrap{
         background-image: url('../img/neb.jpg') !important;
         background-size: 100% 100%;
