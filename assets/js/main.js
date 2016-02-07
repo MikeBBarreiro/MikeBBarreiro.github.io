@@ -1,5 +1,19 @@
 ;(function(){
 
+	var backImg = [
+    'assets/img/stormtrooper.jpg',
+    'assets/img/Space-Beautiful-Design.jpg',
+    'assets/img/darth_vader_snow_.jpg',
+		'assets/img/tropics_palm.jpg',
+		'assets/img/neb.jpg',
+		'assets/img/obi-wan-kenobi-vs-darth-vadewallpaper.jpg'
+  ];
+	var today = new Date();
+  var day = today.getDate();
+  document.getElementById('daily').style.backgroundImage = 'url(' +backImg[day % backImg.length]+ ')'
+  console.log('Date: ', day, today);
+
+
 	$(".bg").interactive_bg({
 		 strength: 15,
 		 scale: 1.05,
@@ -25,7 +39,8 @@
        explotion.fadeOut( 200, function() {
      		// Animation complete.
    		});
-    	});
+			setTimeout(function(){ explotion.remove() }, 3000);
+  	});
 	});
 
   // change background size on window resize
@@ -35,6 +50,7 @@
   //       height: $(window).outerHeight()
   //     })
   //  })
+
 
 
 	toastr.options = {
@@ -97,8 +113,21 @@ function calcSpeed(prev, next) {
 
 }
 
+window.playSound = function(){
+	var audio = document.getElementById("audio");
+	audio.volume = 0.1;
+	audio.play();
 
+	// gameInit();
+}
 
-
+// function gameInit(){
+// 	var enemy = $('.b');
+// 	enemy.clone().insertAfter(enemy) * 2;
+//
+// 	if(enemy > 5){
+// 		enemy.remove();
+// 	}
+// }
 
 })(jQuery)

@@ -6,6 +6,7 @@
 
   $(document).ready(function(){
     $("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
+
     // $('#toggle_showshooshi').click(geocode);
     // $('#toggle_showshooshi').click(function(){
     //   $(".Sushi").attr('src',"assets/img/ww1.png");
@@ -29,6 +30,7 @@ $(window).scroll(function(){
      myVideo.pause();
   }
 })
+
 
   var map,
       infowindow = new google.maps.InfoWindow(),

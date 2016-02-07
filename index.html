@@ -76,7 +76,7 @@
 
   	<!-- MAIN IMAGE SECTION -->
 
-  	<div class="headerwrap" id="home">
+  	<div class="headerwrap" id="daily">
       <div class="bg" data-ibg-bg="assets/img/neb.jpg" ></div>
       <h3 class='contruction animated fadeIn'>Michael <span class="thinner"> Barreiro</span></h3>
       <!-- <div class="animated fadeIn" style="-webkit-animation-delay: 2s; animation-delay: 2s;">
@@ -89,13 +89,16 @@
 
       <div id="large-header" class="large-header">
         <!-- <img class='a' src="assets/img/falling-star2.png"> -->
-        <div class='a crosshair'></div>
+        <div class='a crosshair' onclick="playSound()">
+          <audio id="audio" src="assets/audio/boom.mp3" ></audio>
+        </div>
 
         <canvas id="demo-canvas"></canvas>
         <!-- <div class="star-Destroyer"></div> -->
         <!-- <h3 class='contruction animated fadeIn'>Michael <span class="thinner"> Barreiro</span></h3> -->
 
-        <i class="fa fa-angle-down animated bounce" style="font-size: 30px; webkit-animation-delay:2s;"></i>
+        <i class="fa fa-angle-down animated bounce" style="font-size: 30px; webkit-animation-delay:2s;">
+        </i>
       </div>
   	</div>
 
@@ -104,6 +107,8 @@
       <div class="row">
         <div class="col-md-6 wp1" style="padding-bottom: 5px;">
           <h1>My Story</h1>
+          <!-- <input value="PLAY"  onclick="playSound()">
+          <audio id="audio" src="assets/audio/boom.mp3" ></audio> -->
           <p style="font-size: 12px;">I am a dork with a dream bigger then me, but dorks with big dreams have to start small, just like everyone else.
             My name is Michael Barreiro, and here is my story. I was born and raised in New Orleans, Louisiana.I always had a passion
             for tech and what it was capable of. Then suddenly, code jumped into my life and I was instantly in love with it. Not only did
