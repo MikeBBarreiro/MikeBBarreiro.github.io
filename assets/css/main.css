@@ -253,14 +253,14 @@ hr {
 }
 .headerwrap{
   height: 100%;
-  /*background-image: url('../img/neb.jpg');*/
+  background-image: url('../img/neb.jpg');
   background-size: 100% 100%;
   text-align: center;
   color: white;
 }
-#daily{
+/*#daily{
   background-repeat: no-repeat;
-}
+}*/
 
 
 /*This ID is kept for sanity check DONT USE*/

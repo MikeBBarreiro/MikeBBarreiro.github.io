@@ -1,18 +1,21 @@
 ;(function(){
 
-	var backImg = [
-    'assets/img/stormtrooper.jpg',
-    'assets/img/Space-Beautiful-Design.jpg',
-    'assets/img/darth_vader_snow_.jpg',
-		'assets/img/tropics_palm.jpg',
-		'assets/img/neb.jpg',
-		'assets/img/obi-wan-kenobi-vs-darth-vadewallpaper.jpg'
-  ];
-	var today = new Date();
-  var day = today.getDate();
-	var bkgrndimg = backImg[day % backImg.length];
-  document.getElementById('daily').style.backgroundImage = 'url(' +backImg[day % backImg.length]+ ')'
-	$('.bg').setAttribute('data-ibg-bg', bkgrndimg);
+	// var backImg = [
+  //   'assets/img/stormtrooper.jpg',
+  //   'assets/img/Space-Beautiful-Design.jpg',
+  //   'assets/img/darth_vader_snow_.jpg',
+	// 	'assets/img/tropics_palm.jpg',
+	// 	'assets/img/neb.jpg',
+	// 	'assets/img/obi-wan-kenobi-vs-darth-vadewallpaper.jpg'
+  // ];
+	// var today = new Date();
+  // var day = today.getDate();
+	// var bkgrndimg = backImg[day % backImg.length];
+  // document.getElementById('daily').style.backgroundImage = 'url(' +backImg[day % backImg.length]+ ')'
+	// $('.bg').setAttribute('data-ibg-bg=', bkgrndimg);
+	// var att = document.createAttribute("data-ibg-bg");
+	// att.value = bkgrndimg;
+	// $('.bg').setAttributeNode(att);
   console.log('Date: ', day, today);
 
 
