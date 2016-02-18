@@ -126,10 +126,10 @@ window.playSound = function(){
 	// gameInit();
 }
 
-var pageCount = localStorage.pagecount
+// var pageCount = localStorage.pagecount
 
 if (localStorage.pagecount){
- localStorage.pagecount=Number(localStorage.pagecount) +1;
+ var pageCount = localStorage.pagecount=Number(localStorage.pagecount) +1;
 }
 else{
  localStorage.pagecount=1;
