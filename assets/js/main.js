@@ -125,19 +125,18 @@ window.playSound = function(){
 
 	// gameInit();
 }
+
 var pageCount = localStorage.pagecount
-if (localStorage.pagecount)
- {
+
+if (localStorage.pagecount){
  localStorage.pagecount=Number(localStorage.pagecount) +1;
- }
-else
- {
+}
+else{
  localStorage.pagecount=1;
- }
+}
+
 console.log("Visits: " + pageCount + " time(s).");
 $("#pageCounter").html('Page Views: ' + pageCount);
-
-
 
 switch(pageCount) {
   case "50":
