@@ -44,6 +44,13 @@ h4{
   text-shadow: 0 0 3px black;
 }
 
+#pageCounter{
+  position: fixed;
+  font-size: 12px;
+  margin-left: 10px;
+  z-index: 99;
+}
+
 #map {
   height: 350px;
   width: 100%;
@@ -776,6 +783,17 @@ div.a {
 .sublteani{
   margin-top: -50px;
   padding: 10px;
+}
+
+.sweet-alert{
+  background-color: RGBA(0, 0, 1, 0.9) !important;
+}
+button.confirm:hover{
+  background-color: RGBA(67, 77, 255, 0.5) !important;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /*.bg{

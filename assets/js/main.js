@@ -125,6 +125,53 @@ window.playSound = function(){
 
 	// gameInit();
 }
+var pageCount = localStorage.pagecount
+if (localStorage.pagecount)
+ {
+ localStorage.pagecount=Number(localStorage.pagecount) +1;
+ }
+else
+ {
+ localStorage.pagecount=1;
+ }
+console.log("Visits: " + pageCount + " time(s).");
+$("#pageCounter").html('Page Views: ' + pageCount);
+
+
+
+switch(pageCount) {
+  case "50":
+		swal({
+			title: "Hey YOU!",
+			text: "Starting Feb 18th, you are the 50th visitor! I just wanted to say you are awesome! And thank you for taking a peek at my portfolio.",
+			confirmButtonColor: "RGBA(67, 77, 255, 1)",
+			confirmButtonText: "Sweet!",
+			imageUrl: "assets/img/Leo-lg-white.png"
+		});
+    break;
+  case "100":
+		swal({
+			title: "Hey YOU!",
+			text: "Starting Feb 18th, you are the 100th visitor! I just wanted to say you are awesome! And thank you for taking a peek at my portfolio.",
+			confirmButtonColor: "RGBA(67, 77, 255, 1)",
+			confirmButtonText: "Sweet!",
+			imageUrl: "assets/img/Leo-lg-white.png"
+		});
+    break;
+	case "150":
+		swal({
+			title: "Hey YOU!",
+			text: "Starting Feb 18th, you are the 150th visitor! I just wanted to say you are awesome! And thank you for taking a peek at my portfolio.",
+			confirmButtonColor: "RGBA(67, 77, 255, 1)",
+			confirmButtonText: "Sweet!",
+			imageUrl: "assets/img/Leo-lg-white.png"
+		});
+    break;
+  default:
+    console.log('...');
+}
+
+
 
 // function gameInit(){
 // 	var enemy = $('.b');
