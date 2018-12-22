@@ -11,6 +11,8 @@ app.set('views', __dirname + '/views');
 
 // app.use(morgan('dev'));
 app.use(express.static(__dirname + '/static'));
+//Store all HTML files in view folder.
+app.use(express.static(__dirname + '/views'));
 app.use(bodyParser.urlencoded({extended:true}));
 
 const nodemailer = require('nodemailer');
