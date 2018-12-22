@@ -16,13 +16,13 @@ app.use(bodyParser.urlencoded({extended:true}));
 const nodemailer = require('nodemailer');
 
 app.get('/', function(req,res){
-  res.render('home');
+  res.render('index');
 });
 
 app.post('/', function(req,res){
   console.log(req.body);
   // emailjs.email();
-  
+
   // Generate test SMTP service account from ethereal.email
   // Only needed if you don't have a real mail account for testing
   nodemailer.createTestAccount((err, account) => {
@@ -60,7 +60,7 @@ app.post('/', function(req,res){
           // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
           // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
       });
-    res.render('home');
+    res.render('index');
 
   });
 });
