@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
+// app.set('view engine', 'ejs');
 
 // app.use(morgan('dev'));
 app.use(express.static(__dirname + '/static'));
@@ -16,7 +16,9 @@ app.use(bodyParser.urlencoded({extended:true}));
 const nodemailer = require('nodemailer');
 
 app.get('/', function(req,res){
-  res.render('index');
+  // res.render('index');
+  res.sendFile('index.html');
+  //res.sendFile(path.join(__dirname+'/index.html'));
 });
 
 app.post('/', function(req,res){
@@ -60,8 +62,8 @@ app.post('/', function(req,res){
           // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
           // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
       });
-    res.render('index');
-
+    // res.render('index');
+    res.sendFile('index.html')
   });
 });
 
