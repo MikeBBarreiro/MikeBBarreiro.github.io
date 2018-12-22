@@ -9,16 +9,20 @@
 		<title>Michal Barreiro</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="static/css/main.css" />
-		<link rel="stylesheet" href="static/css/animate.css" />
-		<link rel="stylesheet" href="static/lib/slick/slick.css" />
-		<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+		<base href="/">
+		<!-- the below href will not work becuase its expecting /css/main.css instead because we declare all static images and files in index.js on line 11  -->
+		<!-- <link rel="stylesheet" href="/static/css/main.css" /> -->
+		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" href="/css/animate.css" />
+		<link rel="stylesheet" href="/lib/slick/slick.css" />
+		<noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
 				<h1>Michael E. Barreiro</h1>
+				<h4 style="text-align:center;">Powered By<span> Node/Express</span></h4>
 				<nav>
 					<ul>
 						<li><a href="#intro">Intro</a></li>
@@ -119,17 +123,18 @@
 						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
 					</header>
 					<div class="box">
-						<form method="post" action="#">
+						<form method="post" action="/">
 							<div class="fields">
 								<div class="field half"><input type="text" name="name" placeholder="Name" id="name" /></div>
 								<div class="field half"><input type="email" name="email" placeholder="Email" id="fromEmail" /></div>
 								<div class="field"><textarea name="message" placeholder="Message" rows="6" id="message"></textarea></div>
 							</div>
-							<div style="height: 50px; width: 120px; background-color: red; padding: 2px;" class="btn" id="sendEmail">Send</div>
-							<!-- <ul class="actions special">
+							<!-- <a href="/email" style="height: 50px; width: 120px; background-color: red; padding: 2px;" class="btn" id="sendEmail">Send</a> -->
+							<!-- <div style="height: 50px; width: 120px; background-color: red; padding: 2px;" class="btn" id="sendEmail">Send</div> -->
+							<ul class="actions special">
 								<li><input type="submit" value="Send Message" id="sendEmail" /></li>
-								<button class="btn btn-success" id="sendEmail">Send</button>
-							</ul> -->
+								<!-- <button class="btn btn-success" id="sendEmail">Send</button> -->
+							</ul>
 						</form>
 					</div>
 				</div>
@@ -162,19 +167,19 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="static/js/jquery.min.js"></script>
-			<script src="static/js/jquery.poptrox.min.js"></script>
-			<script src="static/js/jquery.scrolly.min.js"></script>
-			<script src="static/js/jquery.scrollex.min.js"></script>
-			<script src="static/js/browser.min.js"></script>
-			<script src="static/js/breakpoints.min.js"></script>
-			<script src="static/js/util.js"></script>
-			<script src="static/lib/waypoint.js"></script>
-			<script src="static/lib/jquery.waypoints.min.js"></script>
-			<script src="static/lib/slick/slick.js"></script>
-			<script type="text/javascript" src="static/lib/slick/slick.min.js"></script>
-			<script src="static/js/main.js"></script>
-			<script src="static/js/email.js"></script>
+			<script src="/js/jquery.min.js"></script>
+			<script src="/js/jquery.poptrox.min.js"></script>
+			<script src="/js/jquery.scrolly.min.js"></script>
+			<script src="/js/jquery.scrollex.min.js"></script>
+			<script src="/js/browser.min.js"></script>
+			<script src="/js/breakpoints.min.js"></script>
+			<script src="/js/util.js"></script>
+			<script src="/lib/waypoint.js"></script>
+			<script src="/lib/jquery.waypoints.min.js"></script>
+			<script src="/lib/slick/slick.js"></script>
+			<script type="text/javascript" src="/lib/slick/slick.min.js"></script>
+			<script src="/js/main.js"></script>
+			<!-- <script src="/js/email.js"></script> -->
 
 	</body>
 </html>
