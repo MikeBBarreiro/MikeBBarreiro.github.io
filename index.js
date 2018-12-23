@@ -62,7 +62,7 @@ app.post('/', function(req,res){
   // setup email data with unicode symbols
   let mailOptions = {
       from: req.body.email, // sender address
-      to: process.env.EMAIL, // list of receivers
+      to: process.env.USER_EMAIL, // list of receivers
       //to: 'o5091446@nwytg.net' //https://10minutemail.com for email testing
       subject: 'Message from ' + req.body.name + ' ' + req.body.email, // Subject line
       //text: 'Hello world? Can you see me!!!??', // plain text body
