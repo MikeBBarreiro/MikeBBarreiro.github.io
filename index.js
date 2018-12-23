@@ -69,6 +69,7 @@ app.post('/', function(req,res){
       html: '<b>Message from Portfolio Website:</b><br/><p>'+req.body.message+'</p>' // html body
   };
   console.log('Mailoptions: ', mailOptions);
+  console.log('.env variable: ', process.env.GMAIL_USER);
   // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
