@@ -1,5 +1,8 @@
 'use strict'
 require('dotenv').config();
+const nodemailer = require('nodemailer');
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
 var express = require('express');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
@@ -15,7 +18,17 @@ app.use(express.static(__dirname + '/static'));
 // app.use(express.static(__dirname + '/views'));
 app.use(bodyParser.urlencoded({extended:true}));
 
-const nodemailer = require('nodemailer');
+const oauth2Client = new OAuth2(
+     "825108508646-4dh2m640tbrcc953ff15co73fi491pkv.apps.googleusercontent.com", // ClientID
+     "AIr2LGlT84rS-Di2pXsxW37O", // Client Secret
+     "https://developers.google.com/oauthplayground" // Redirect URL
+);
+
+oauth2Client.setCredentials({
+     refresh_token: "1/I4Lfwn_pD2UZK8zMn65iTpfh1eyYOj5QSEEShhcZHhiLeKeSZNyC66L1VFkVNdwf"
+});
+const tokens = await oauth2Client.refreshAccessToken()
+const accessToken = tokens.credentials.access_token
 
 app.get('/', function(req,res){
   res.render('index');
@@ -33,9 +46,16 @@ app.post('/', function(req,res){
       service: 'Gmail',
       // port: 587,
       // secure: false, // true for 465, false for other ports
+      port: 465,
+      secure: true,
       auth: {
-          user: process.env.GMAIL_USER, // generated ethereal user
-          pass: process.env.GMAIL_PASS // generated ethereal password
+        type: "OAuth2",
+        user: process.env.GMAIL_USER, // generated ethereal user
+        pass: process.env.GMAIL_PASS, // generated ethereal password
+        clientId: "825108508646-4dh2m640tbrcc953ff15co73fi491pkv.apps.googleusercontent.com",
+        clientSecret: "AIr2LGlT84rS-Di2pXsxW37O",
+        refreshToken: "1/I4Lfwn_pD2UZK8zMn65iTpfh1eyYOj5QSEEShhcZHhiLeKeSZNyC66L1VFkVNdwf",
+        accessToken: "ya29.Glt7Br1YaIEExWRJDWu5zqyTtrSIf2I2RcRqR6gKt_nIZWx4SCo6EINpG5Y18Vj5FqbVwuT7Q4_Pi16AAhCa7RD0h4BEyfmM8Bk1O4OOGiQHGS2SFYHL3rqR79z6"
       }
   });
 
