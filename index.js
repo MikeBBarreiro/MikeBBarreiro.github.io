@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 const nodemailer = require('nodemailer');
 
 app.get('/', function(req,res){
-  res.render('home');
+  res.render('index');
 });
 
 app.post('/', function(req,res){
@@ -60,7 +60,7 @@ app.post('/', function(req,res){
           // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
           // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
       });
-    res.render('home');
+    res.render('index');
 
   });
 });
