@@ -75,6 +75,7 @@ app.post('/', function(req,res){
           return console.log(error);
       }
       console.log('Message sent: %s', info.messageId);
+      console.log('Mailoptions: ', mailOptions);
       // Preview only available when sending through an Ethereal account
       console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
