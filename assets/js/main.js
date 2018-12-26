@@ -3,6 +3,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
 var images = [
   // "images/7136454.jpeg",
   "images/47306769_517797778724328_8810367449095471104_n.jpg",
@@ -13,6 +14,30 @@ var images = [
 (function($) {
 	var imageHead = document.getElementById("two");
 
+  $('.nothanks').click(function(){
+    $('.underconstruction').css('display','none');
+  });
+
+  // $('.bd-example-modal-lg').modal('show');
+  // swal("HEY!", "This is a static website! Would you like to visit my website powered by NODE/EXPRESS?", {
+  //   buttons: ["Lets Go!", "No Thanks!"],
+  // });
+  // swal("HEY!", "This is a static website! Would you like to visit my website powered by NODE/EXPRESS?", {
+  //   buttons: {
+  //     cancel: "No Thanks!",
+  //     go: {
+  //       text: "Lets Go!",
+  //       value: "gonow",
+  //     }
+  //   },
+  // })
+  // .then((value) => {
+  //   switch (value) {
+  //     case "gonow":
+  //       window.location = 'https://mikebbarreiro.herokuapp.com/'
+  //       break;
+  //   }
+  // });
 	var DarthVader = new Waypoint({
 	  element: document.getElementById('one'),
 	  handler: function(direction) {
@@ -27,7 +52,7 @@ var images = [
 	  },
 	  offset: 250
 	});
-  
+
 
 	$(document).ready(function(){
 	  $('.your-class').slick({
