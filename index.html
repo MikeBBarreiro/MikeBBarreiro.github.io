@@ -14,12 +14,41 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/animate.css" />
 		<link rel="stylesheet" href="assets/lib/slick/slick.css" />
-		<!-- <link rel="stylesheet" href="assets/css/bootstrap.css" /> -->
+		<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" /> -->
 		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 		<link rel="stylesheet" href="assets/css/hover.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<div id="Niel-deGrasse" class="animated fadeIn" style="display: none;">
+			<h4>Niel deGrasse Tyson</h4>
+			<span>
+				"There is no greater education then one that is self-driven"
+			</span>
+			<div class="arrowTopRight"></div>
+		</div>
+		<div id="Stephen-Hawking" class="animated fadeIn" style="display: none;">
+	    <h4>Stephen Hawking</h4>
+	    <span>
+	      "However difficult life may seem, there is always somthing you can do, and succeed at. It matters that you dont just give up."
+	    </span>
+	    <div class="arrowTopRight"></div>
+	  </div>
+		<div id="Dolly-Parton" class="animated fadeIn" style="display: none;">
+	    <h4>Dolly Parton</h4>
+	    <span>
+	      "The way I see it, if you want the rainbow, you gotta put up with the rain."
+	    </span>
+	    <div class="arrowTopRight"></div>
+	  </div>
+		<div id="Martin-Luther-King" class="animated fadeIn" style="display: none;">
+	    <h4>Martin Luther King Jr.</h4>
+	    <span>
+	      "Intelligence plus character, that is the goal of true education."
+	    </span>
+	    <div class="arrowTopRight"></div>
+	  </div>
+
 		<!-- Temporary styling -->
 		<div class="underconstruction">
 			<h2 style="text-align: center; color: white; margin-top: 10%;">HEY!</h2>
@@ -27,7 +56,9 @@
 			<p style="color: white; text-align:center;padding:25px;">This is a static website! Would you like to visit <a href="https://mikebbarreiro.herokuapp.com/">mikebbarreiro.herokuapp.com/</a> to view the full page powered by NODE/EXPRESS!?</p>
 			<div class="nothanks hvr-grow" style="width:120px;padding: 10px; border:1px solid white;position: absolute;left: 0;right: 0;margin:auto;background-color:rgba(0, 0, 0, 0.59);"><p>No Thanks!</p></div>
 		</div>
-
+		<!-- <img class="superIntendent" src="images/superIntent.png" />
+		<img class="superIntendent" src="images/superIntentsHappy.png" /> -->
+		<div class="superIntendent animated slideInDown" style="display: none;"></div>
 
 		<!-- Header -->
 			<header id="header">
@@ -95,21 +126,40 @@
 				<div class="content">
 					<header>
 						<h2>My Work</h2>
-						<p>In my spare time when im not working on software, I like to work on some ideas I like to have fun with. please help yourself and take a peak!</p>
-						<p>I am currently updating this section to show more work done..</p>
+						<p>In my spare time when im not working on software, I like to work on some ideas I like to have fun with. please help yourself and take a peak! This sections is always a work in progress, so come back for more in the future!</p>
+						<!-- <p>I am currently updating this section to show more work done..</p> -->
 					</header>
 
-					<!-- Gallery  -->
 						<div class="gallery">
-							<article class="from-left">
-								<a href="https://zilla-62c50.web.app/" class="image fit"><img src="images/myWorks/zilla.png" title="Zilla" alt="zilla" /></a>
+							<article class="from-left cms-app-article aaa">
+								<!-- Gallery  -->
+								<!-- <div class="readAboutOverLay cma-app-readmore">
+									<a href="http://customers-managment-connection.herokuapp.com/" class=""><div class="siteLink hvr-grow"><i class="fa fa-link" aria-hidden="true"></i> Open</div></a>
+									<div class="readMore hvr-grow">
+										<span>Read About<span>
+									</div>
+								</div> -->
+								<a href="http://customers-managment-connection.herokuapp.com/" class="image fit"><img src="images/myWorks/CMA.png" title="CMA" alt="CMA" /></a>
 							</article>
-							<article class="from-right">
+
+							<article class="from-right aaa-app-article">
 								<a href="https://axisandalliesassistant.firebaseapp.com/" class="image fit"><img src="images/myWorks/aaa.png" title="aaa" alt="aaa" /></a>
 							</article>
-							<article class="from-left">
-								<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
+
+							<article class="from-left z-app-article">
+								<a href="https://zilla-62c50.web.app/" class="image fit"><img src="images/myWorks/zilla.png" title="Zilla" alt="zilla" /></a>
 							</article>
+							<!-- <div id="z-app-info">
+								<h4>ZILLA</h4>
+								<span>
+									ZIllA is a side scrolling Video Game built with the Phaser Engine. Utlizing Physics, Particle Effects and
+									a way to access Sprite sheets and their animations. Phaser is Perfect for 2d Video games.
+									In this game, you play Godzilla in an alternate timeline to defeat the clone army of
+									of King Ghidorah in the stratasphere of Earth.
+								</span>
+								<div class="arrowTopRight"></div>
+							</div> -->
+
 							<article class="from-right">
 								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
 							</article>
@@ -120,7 +170,46 @@
 								<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
 							</article>
 						</div>
+						<h3 style="margin: 15px; font-size: 24px;">Learn the back story of each Project!</h3>
 
+						<button class="accordion">Customers Managment Applcation (CMS)</button>
+						<div class="panel">
+							<p>
+								This MVC application utilizes MongoDB's wonderful database tools
+									to store the user data. Practicing one-to-many datasets with both embeded,
+									and refrenceds documents (tables). Whilst using a NODE server for the middle ware
+									and a pure javascript front end, NO framework was used. This is because I
+									wanted to fine a way to showcase my javascript expertice without having
+									the convience of the front-end frameworks I enjoy; like<span style="color: red;padding: 0 4px;">Angular</span>,<span style="color: #43AE7E;padding: 0 4px;">Vue</span>, or <span style="color: #62D0EC;padding: 0 4px;">React</span>. Although this
+									project is not only about showcasing Front-End Development, Backend Develpment, Subtle Design for a decent DB
+									layout, or even Mongo Database Managment. Its about executing business logic provided from a "client" scenario.
+									In this project, I was given documentation on how the data schema is supposed to be layed out, whats desired,
+									and whats expected. This demo application was a result of that.
+							</p>
+						</div>
+
+						<button class="accordion">Axis and Allies Assistant (AAA)</button>
+						<div class="panel">
+							<p>
+								Axis and Allies is actually a board game. But this app is not meant to be the board game itself,
+								its meant to enhance it. AAA, is a board game I play with my friends alot. I decided to make this
+								app for Myself, My friends and any one who plays the board game around the world. It makes the
+								hassling experience of tracking money, territories, and in general makes a better experience for not remembering all the rules; ..it does it all for you!
+								This app in theory is simple, but utilizing area mapping for territory selection, and logic
+								of managment, is a challenge in of itself. With a very intuative UX and a Modern slick UI, this app
+								is not only very easy to use, But a lot of fun. it really does complete the board games experience!
+							</p>
+						</div>
+
+						<button class="accordion">ZILLA</button>
+						<div class="panel">
+							<p>
+								ZIllA is a side scrolling Video Game built with the Phaser Engine. Utlizing Physics, Particle Effects and
+								a way to access Sprite sheets and their animations. Phaser is Perfect for 2d Video games.
+								In this game, you play Godzilla in an alternate timeline to defeat the clone army of
+								of King Ghidorah in the stratasphere of Earth.
+							</p>
+						</div>
 				</div>
 			</section>
 
@@ -182,7 +271,8 @@
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
-			<!-- <script src="assets/js/bootstrap.js"></script> -->
+			<script src="assets/js/popper.min.js"></script>
+			<script src="assets/js/bootstrap.bundle.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/lib/waypoint.js"></script>
 			<script src="assets/lib/jquery.waypoints.min.js"></script>
