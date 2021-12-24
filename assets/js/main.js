@@ -147,26 +147,31 @@ setInterval(function() {
       }
 }, getRandomInt(5000));
 
-var funFacIndex = 0;
-var intervalQuoteDisplay = 15000;
+var x = window.matchMedia("(max-width: 414px)");
 
-setInterval(function() {
-  intervalQuoteDisplay = Math.floor(Math.random() * (15000 - 10000) + 10000)
-  // funFacIndex = Math.floor(Math.random() * funFacts.length);
+if(!x.matches){
+  var funFacIndex = 0;
+  var intervalQuoteDisplay = 15000;
 
-  $('body > #' + funFacts[funFacIndex]).css('display', '');
+  setInterval(function() {
+    intervalQuoteDisplay = Math.floor(Math.random() * (15000 - 10000) + 10000)
+    // funFacIndex = Math.floor(Math.random() * funFacts.length);
+    // console.log(intervalQuoteDisplay);
+    $('body > #' + funFacts[funFacIndex]).css('display', '');
 
-  setTimeout(function(){
-    $('body > #' + funFacts[funFacIndex]).addClass('fadeOut');
-    funFacIndex = funFacIndex + 1;
-    if (funFacIndex == funFacts.length) {
-      funFacIndex = 0;
-    }
-    $('body > #' + funFacts[funFacIndex]).css('display', 'none')
-    $('body > #' + funFacts[funFacIndex]).removeClass('fadeOut');
-  }, 7000);
+    setTimeout(function(){
+      $('body > #' + funFacts[funFacIndex]).addClass('fadeOut');
+      funFacIndex = funFacIndex + 1;
+      if (funFacIndex == funFacts.length) {
+        funFacIndex = 0;
+      }
+      $('body > #' + funFacts[funFacIndex]).css('display', 'none')
+      $('body > #' + funFacts[funFacIndex]).removeClass('fadeOut');
+    }, 7000);
 
-}, intervalQuoteDisplay);
+  }, intervalQuoteDisplay);
+}
+
 
 	var	$window = $(window),
 		$body = $('body'),
