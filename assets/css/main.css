@@ -8,6 +8,13 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+@media screen and (min-width: 900px) {
+  #Martin-Luther-King, #Dolly-Parton, #Niel-deGrasse, #Stephen-Hawking{
+    right: 1.5%;
+    top: 16.5%;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .superIntendent{
     display: none;
