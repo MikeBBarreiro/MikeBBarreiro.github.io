@@ -8,10 +8,10 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1290px) {
   #Martin-Luther-King, #Dolly-Parton, #Niel-deGrasse, #Stephen-Hawking{
-    right: 1.5%;
-    top: 16.5%;
+    right: 1.5% !important;
+    top: 16.5% !important;
   }
 }
 
