@@ -80,6 +80,14 @@ $(document).ready(function(){
     return false;
   });
 
+  
+
+// $(document).on('click', '#sendEmail', function(){
+// 	// window.location.href = 'http://mikebbarreiro.github.io/thankyou.html';
+// 	window.location.href = 'file:///C:/Users/l8mik/Documents/code/repo/MikeBBarreiro.github.io//thankyou.html';
+// 	return false;
+// });
+
   // $('.bd-example-modal-lg').modal('show');
   // swal("HEY!", "This is a static website! Would you like to visit my website powered by NODE/EXPRESS?", {
   //   buttons: ["Lets Go!", "No Thanks!"],
@@ -257,6 +265,9 @@ if(!x.matches){
 			// 	windowMargin: 50,
 			// 	usePopupNav: true
 			// });
+
+			const emailInput = document.getElementById("emailInput");
+			emailInput.value = '7351f711-2acf-446a-916e-358fa38c02fc';
 
 			// Hack: Adjust margins when 'small' activates.
 				breakpoints.on('>small', function() {
