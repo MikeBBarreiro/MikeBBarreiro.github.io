@@ -2103,6 +2103,14 @@ opacity: 1.0 !important;
   		width: 100%;
   	}
 
+	.gallery > #hoverContainer-fm{
+		height: 198px !important;
+	}
+
+	.gallery > #hoverContainer-zilla{
+		height: 198px !important;
+	}
+
 }
 
 /* Header */
