@@ -20,165 +20,198 @@ var funFacts = [
 ]
 
 $(document).ready(function(){
-  // var tooltipSpan = document.getElementById('cms-app-info');
-  //
-  // window.onmousemove = function (e) {
-  //     var x = e.clientX,
-  //         y = e.clientY;
-  //     tooltipSpan.style.top = (y + 20) + 'px';
-  //     tooltipSpan.style.left = (x + 20) + 'px';
-  // };
-  var acc = document.getElementsByClassName("accordion");
-  var i;
+	// var tooltipSpan = document.getElementById('cms-app-info');
+	//
+	// window.onmousemove = function (e) {
+	//     var x = e.clientX,
+	//         y = e.clientY;
+	//     tooltipSpan.style.top = (y + 20) + 'px';
+	//     tooltipSpan.style.left = (x + 20) + 'px';
+	// };
+	var acc = document.getElementsByClassName("accordion");
+	var i;
 
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-    });
-  }
+	for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+		panel.style.maxHeight = null;
+		} else {
+		panel.style.maxHeight = panel.scrollHeight + "px";
+		}
+	});
+	}
 
 	var imageHead = document.getElementById("two");
 
-  $('.nothanks').click(function(){
-    $('.underconstruction').css('display','none');
-  });
+	$('.nothanks').click(function(){
+		$('.underconstruction').css('display','none');
+	});
 
-  // $(document).on('click', '.readMore',function(e){
-  //   $('#cms-app-info').css('display', 'block');
-  //   $('.readMore').text('Close');
-  //   $('.readMore').addClass('closeCMS');
-  //   $('.readMore').removeClass('readMore');
-  //   e.stopPropagation()
-  //   return false;
-  // });
-  // $(document).on('click touchstart', '.readMore',function(e){
-  //   $('#cms-app-info').css('display', '');
-  //   // $('#cms-app-info').css('opacity', '1');
-  //   $('.readMore').text('Close');
-  //   $('.readMore').addClass('closeCMS');
-  //   $('.readMore').removeClass('readMore');
-  // });
+	const containerZilla = document.getElementById('hoverContainer-zilla');
+	const containerFM = document.getElementById('hoverContainer-fm');
+	const videoZilla = document.getElementById('hoverVid-zilla');
+	const videoFM = document.getElementById('hoverVid-fm');
 
-  // $(document).on('click', '.closeCMS', function(){
-  //   // $('#cms-app-info').css('opacity', '0');
-  //   $('#cms-app-info').css('display', 'none');
-  //   $('.closeCMS').text('Read More');
-  //   $('.closeCMS').addClass('readMore');
-  //   $('.closeCMS').removeClass('closeCMS');
-  //   return false;
-  // });
+	// Play the video when the mouse enters the container
+	containerZilla.addEventListener('mouseenter', () => {
+		videoZilla.currentTime = 9;
+		videoZilla.play().catch(error => {
+			console.log("Playback prevented or video still loading:", error);
+		});
+	});
 
-  $(document).on('click', '.fa-window-close-o', function(){
-    console.log('working?');
-    $('#cms-app-info').css('opacity', '0');
-    return false;
-  });
+	// Pause and reset the video when the mouse leaves
+	containerZilla.addEventListener('mouseleave', () => {
+		videoZilla.pause();
+		videoZilla.currentTime = 0; // Rewinds the video to the beginning
+	});
 
-  
+	// Play the video when the mouse enters the container
+	containerFM.addEventListener('mouseenter', () => {
+		videoFM.currentTime = 8;
+		videoFM.play().catch(error => {
+			console.log("Playback prevented or video still loading:", error);
+		});
+	});
 
-// $(document).on('click', '#sendEmail', function(){
-// 	// window.location.href = 'http://mikebbarreiro.github.io/thankyou.html';
-// 	window.location.href = 'file:///C:/Users/l8mik/Documents/code/repo/MikeBBarreiro.github.io//thankyou.html';
-// 	return false;
-// });
+	// Pause and reset the video when the mouse leaves
+	containerFM.addEventListener('mouseleave', () => {
+		videoFM.pause();
+		videoFM.currentTime = 0; // Rewinds the video to the beginning
+	});
 
-  // $('.bd-example-modal-lg').modal('show');
-  // swal("HEY!", "This is a static website! Would you like to visit my website powered by NODE/EXPRESS?", {
-  //   buttons: ["Lets Go!", "No Thanks!"],
-  // });
-  // swal("HEY!", "This is a static website! Would you like to visit my website powered by NODE/EXPRESS?", {
-  //   buttons: {
-  //     cancel: "No Thanks!",
-  //     go: {
-  //       text: "Lets Go!",
-  //       value: "gonow",
-  //     }
-  //   },
-  // })
-  // .then((value) => {
-  //   switch (value) {
-  //     case "gonow":
-  //       window.location = 'https://mikebbarreiro.herokuapp.com/'
-  //       break;
-  //   }
-  // });
-var DarthVader = new Waypoint({
-  element: document.getElementById('one'),
-  handler: function(direction) {
-    // notify('I am 20px from the top of the window')
-		// console.log('this works');
-		$('#DarthVaderOne').addClass('animated slideInUp');
-		$('#DarthVaderOne').css('display','block');
-		setTimeout(function(){
-			$(".StarDes1").animate({width: "20%",height: '20%', left: "16%", top: '14%'}, 3000);
-		}, 500);
+	// $(document).on('click', '.readMore',function(e){
+	//   $('#cms-app-info').css('display', 'block');
+	//   $('.readMore').text('Close');
+	//   $('.readMore').addClass('closeCMS');
+	//   $('.readMore').removeClass('readMore');
+	//   e.stopPropagation()
+	//   return false;
+	// });
+	// $(document).on('click touchstart', '.readMore',function(e){
+	//   $('#cms-app-info').css('display', '');
+	//   // $('#cms-app-info').css('opacity', '1');
+	//   $('.readMore').text('Close');
+	//   $('.readMore').addClass('closeCMS');
+	//   $('.readMore').removeClass('readMore');
+	// });
 
-  },
-  offset: 250
-});
+	// $(document).on('click', '.closeCMS', function(){
+	//   // $('#cms-app-info').css('opacity', '0');
+	//   $('#cms-app-info').css('display', 'none');
+	//   $('.closeCMS').text('Read More');
+	//   $('.closeCMS').addClass('readMore');
+	//   $('.closeCMS').removeClass('closeCMS');
+	//   return false;
+	// });
 
-$('.your-class').slick({
-	slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 1000,
-});
+	$(document).on('click', '.fa-window-close-o', function(){
+		console.log('working?');
+	$('#cms-app-info').css('opacity', '0');
+		return false;
+	});
 
-function getRandomInt(max) {
-  var time = Math.floor(Math.random() * (max - 3000) + 3000)
-  console.log(time);
-  return time;
-}
 
-var ixd = 0;
-setInterval(function() {
-  if(!$('.superIntendent').hasClass('initialized')){
-    $('.superIntendent').css('display', '');
-    $('.superIntendent').addClass('slideInDown');
-    $('.superIntendent').addClass('initialized')
-  }
-      // imageHead.style.backgroundImage = "url('images/overlay.png'), url(" + images[i] + ")";
+
+	// $(document).on('click', '#sendEmail', function(){
+	// 	// window.location.href = 'http://mikebbarreiro.github.io/thankyou.html';
+	// 	window.location.href = 'file:///C:/Users/l8mik/Documents/code/repo/MikeBBarreiro.github.io//thankyou.html';
+	// 	return false;
+	// });
+
+	// $('.bd-example-modal-lg').modal('show');
+	// swal("HEY!", "This is a static website! Would you like to visit my website powered by NODE/EXPRESS?", {
+	//   buttons: ["Lets Go!", "No Thanks!"],
+	// });
+	// swal("HEY!", "This is a static website! Would you like to visit my website powered by NODE/EXPRESS?", {
+	//   buttons: {
+	//     cancel: "No Thanks!",
+	//     go: {
+	//       text: "Lets Go!",
+	//       value: "gonow",
+	//     }
+	//   },
+	// })
+	// .then((value) => {
+	//   switch (value) {
+	//     case "gonow":
+	//       window.location = 'https://mikebbarreiro.herokuapp.com/'
+	//       break;
+	//   }
+	// });
+	var DarthVader = new Waypoint({
+	element: document.getElementById('one'),
+	handler: function(direction) {
+	// notify('I am 20px from the top of the window')
+	// console.log('this works');
+	$('#DarthVaderOne').addClass('animated slideInUp');
+	$('#DarthVaderOne').css('display','block');
+	setTimeout(function(){
+		$(".StarDes1").animate({width: "20%",height: '20%', left: "16%", top: '14%'}, 3000);
+	}, 500);
+
+	},
+	offset: 250
+	});
+
+	$('.your-class').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 1000,
+	});
+
+	function getRandomInt(max) {
+	var time = Math.floor(Math.random() * (max - 3000) + 3000)
+		console.log(time);
+		return time;
+	}
+
+	var ixd = 0;
+	setInterval(function() {
+		if(!$('.superIntendent').hasClass('initialized')){
+			$('.superIntendent').css('display', '');
+			$('.superIntendent').addClass('slideInDown');
+			$('.superIntendent').addClass('initialized')
+		}
+		// imageHead.style.backgroundImage = "url('images/overlay.png'), url(" + images[i] + ")";
 			// imageHead.style.webkitTransition = "opacity 1s ease-in-out";
-      $('.superIntendent').css('backgroundImage', 'url(' + images[ixd] + ')');
-  // -moz-transition: opacity 3s ease-in-out;
-  // -ms-transition: opacity 3s ease-in-out;
-  // -o-transition: opacity 3s ease-in-out;
-      ixd = ixd + 1;
-      if (ixd == images.length) {
-        ixd = 0;
-      }
-}, getRandomInt(5000));
+		$('.superIntendent').css('backgroundImage', 'url(' + images[ixd] + ')');
+		// -moz-transition: opacity 3s ease-in-out;
+		// -ms-transition: opacity 3s ease-in-out;
+		// -o-transition: opacity 3s ease-in-out;
+		ixd = ixd + 1;
+		if (ixd == images.length) {
+			ixd = 0;
+		}
+	}, getRandomInt(5000));
 
-var x = window.matchMedia("(max-width: 414px)");
+	var x = window.matchMedia("(max-width: 414px)");
 
-if(!x.matches){
-  var funFacIndex = 0;
-  var intervalQuoteDisplay = 15000;
+	if(!x.matches){
+		var funFacIndex = 0;
+		var intervalQuoteDisplay = 15000;
 
-  setInterval(function() {
-    intervalQuoteDisplay = Math.floor(Math.random() * (15000 - 10000) + 10000)
-    // funFacIndex = Math.floor(Math.random() * funFacts.length);
-    // console.log(intervalQuoteDisplay);
-    $('body > #' + funFacts[funFacIndex]).css('display', '');
+		setInterval(function() {
+		intervalQuoteDisplay = Math.floor(Math.random() * (15000 - 10000) + 10000)
+		// funFacIndex = Math.floor(Math.random() * funFacts.length);
+		// console.log(intervalQuoteDisplay);
+		$('body > #' + funFacts[funFacIndex]).css('display', '');
 
-    setTimeout(function(){
-      $('body > #' + funFacts[funFacIndex]).addClass('fadeOut');
-      funFacIndex = funFacIndex + 1;
-      if (funFacIndex == funFacts.length) {
-        funFacIndex = 0;
-      }
-      $('body > #' + funFacts[funFacIndex]).css('display', 'none')
-      $('body > #' + funFacts[funFacIndex]).removeClass('fadeOut');
-    }, 7000);
+		setTimeout(function(){
+			$('body > #' + funFacts[funFacIndex]).addClass('fadeOut');
+			funFacIndex = funFacIndex + 1;
+			if (funFacIndex == funFacts.length) {
+			funFacIndex = 0;
+			}
+			$('body > #' + funFacts[funFacIndex]).css('display', 'none')
+			$('body > #' + funFacts[funFacIndex]).removeClass('fadeOut');
+		}, 7000);
 
-  }, intervalQuoteDisplay);
-}
+		}, intervalQuoteDisplay);
+	}
 
 
 	var	$window = $(window),
@@ -187,208 +220,208 @@ if(!x.matches){
 		$all = $body.add($header);
 
 	// Breakpoints.
-		breakpoints({
-			xxlarge: [ '1681px',  '1920px' ],
-			xlarge:  [ '1281px',  '1680px' ],
-			large:   [ '1001px',  '1280px' ],
-			medium:  [ '737px',   '1000px' ],
-			small:   [ '481px',   '736px'  ],
-			xsmall:  [ null,      '480px'  ]
-		});
+	breakpoints({
+		xxlarge: [ '1681px',  '1920px' ],
+		xlarge:  [ '1281px',  '1680px' ],
+		large:   [ '1001px',  '1280px' ],
+		medium:  [ '737px',   '1000px' ],
+		small:   [ '481px',   '736px'  ],
+		xsmall:  [ null,      '480px'  ]
+	});
 
 	// Play initial animations on page load.
-		$window.on('load', function() {
-			setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+	$window.on('load', function() {
+		setTimeout(function() {
+			$body.removeClass('is-preload');
+		}, 100);
+	});
 
 	// Touch mode.
-		if (browser.mobile)
-			$body.addClass('is-touch');
+	if (browser.mobile)
+		$body.addClass('is-touch');
 
-		breakpoints.on('<=small', function() {
-			$body.addClass('is-touch');
-		});
+	breakpoints.on('<=small', function() {
+		$body.addClass('is-touch');
+	});
 
-		breakpoints.on('>small', function() {
-			$body.removeClass('is-touch');
-		});
+	breakpoints.on('>small', function() {
+		$body.removeClass('is-touch');
+	});
 
 	// Fix: IE flexbox fix.
-		if (browser.name == 'ie') {
+	if (browser.name == 'ie') {
 
-			var $main = $('.main.fullscreen'),
-				IEResizeTimeout;
-
-			$window
-				.on('resize.ie-flexbox-fix', function() {
-
-					clearTimeout(IEResizeTimeout);
-
-					IEResizeTimeout = setTimeout(function() {
-
-						var wh = $window.height();
-
-						$main.each(function() {
-
-							var $this = $(this);
-
-							$this.css('height', '');
-
-							if ($this.height() <= wh)
-								$this.css('height', (wh - 50) + 'px');
-
-						});
-
-					});
-
-				})
-				.triggerHandler('resize.ie-flexbox-fix');
-
-		}
-
-	// Gallery.
-		$window.on('load', function() {
-
-			var $gallery = $('.gallery');
-
-			// $gallery.poptrox({
-			// 	baseZIndex: 10001,
-			// 	useBodyOverflow: false,
-			// 	usePopupEasyClose: false,
-			// 	overlayColor: '#1f2328',
-			// 	overlayOpacity: 0.65,
-			// 	usePopupDefaultStyling: false,
-			// 	usePopupCaption: true,
-			// 	popupLoaderText: '',
-			// 	windowMargin: 50,
-			// 	usePopupNav: true
-			// });
-
-			const emailInput = document.getElementById("emailInput");
-			emailInput.value = '7351f711-2acf-446a-916e-358fa38c02fc';
-
-			// Hack: Adjust margins when 'small' activates.
-				breakpoints.on('>small', function() {
-					$gallery.each(function() {
-						// $(this)[0]._poptrox.windowMargin = 50;
-					});
-				});
-
-				breakpoints.on('<=small', function() {
-					$gallery.each(function() {
-						$(this)[0]._poptrox.windowMargin = 5;
-					});
-				});
-
-		});
-
-	// Section transitions.
-		if (browser.canUse('transition')) {
-
-			var on = function() {
-
-				// Galleries.
-					$('.gallery')
-						.scrollex({
-							top:		'30vh',
-							bottom:		'30vh',
-							delay:		50,
-							initialize:	function() { $(this).addClass('inactive'); },
-							terminate:	function() { $(this).removeClass('inactive'); },
-							enter:		function() { $(this).removeClass('inactive'); },
-							leave:		function() { $(this).addClass('inactive'); }
-						});
-
-				// Generic sections.
-					$('.main.style1')
-						.scrollex({
-							mode:		'middle',
-							delay:		100,
-							initialize:	function() { $(this).addClass('inactive'); },
-							terminate:	function() { $(this).removeClass('inactive'); },
-							enter:		function() { $(this).removeClass('inactive'); },
-							leave:		function() { $(this).addClass('inactive'); }
-						});
-
-					$('.main.style2')
-						.scrollex({
-							mode:		'middle',
-							delay:		100,
-							initialize:	function() { $(this).addClass('inactive'); },
-							terminate:	function() { $(this).removeClass('inactive'); },
-							enter:		function() { $(this).removeClass('inactive'); },
-							leave:		function() { $(this).addClass('inactive'); }
-						});
-
-				// Contact.
-					$('#contact')
-						.scrollex({
-							top:		'50%',
-							delay:		50,
-							initialize:	function() { $(this).addClass('inactive'); },
-							terminate:	function() { $(this).removeClass('inactive'); },
-							enter:		function() { $(this).removeClass('inactive'); },
-							leave:		function() { $(this).addClass('inactive'); }
-						});
-
-			};
-
-			var off = function() {
-
-				// Galleries.
-					$('.gallery')
-						.unscrollex();
-
-				// Generic sections.
-					$('.main.style1')
-						.unscrollex();
-
-					$('.main.style2')
-						.unscrollex();
-
-				// Contact.
-					$('#contact')
-						.unscrollex();
-
-			};
-
-			breakpoints.on('<=small', off);
-			breakpoints.on('>small', on);
-
-		}
-
-	// Events.
-		var resizeTimeout, resizeScrollTimeout;
+		var $main = $('.main.fullscreen'),
+			IEResizeTimeout;
 
 		$window
-			.on('resize', function() {
+			.on('resize.ie-flexbox-fix', function() {
 
-				// Disable animations/transitions.
-					$body.addClass('is-resizing');
+				clearTimeout(IEResizeTimeout);
 
-				clearTimeout(resizeTimeout);
+				IEResizeTimeout = setTimeout(function() {
 
-				resizeTimeout = setTimeout(function() {
+					var wh = $window.height();
 
-					// Update scrolly links.
-						$('a[href^="#"]').scrolly({
-							speed: 1500,
-							offset: $header.outerHeight() - 1
-						});
+					$main.each(function() {
 
-					// Re-enable animations/transitions.
-						setTimeout(function() {
-							$body.removeClass('is-resizing');
-							$window.trigger('scroll');
-						}, 0);
+						var $this = $(this);
 
-				}, 100);
+						$this.css('height', '');
+
+						if ($this.height() <= wh)
+							$this.css('height', (wh - 50) + 'px');
+
+					});
+
+				});
 
 			})
-			.on('load', function() {
-				$window.trigger('resize');
+			.triggerHandler('resize.ie-flexbox-fix');
+
+	}
+
+	// Gallery.
+	$window.on('load', function() {
+
+		var $gallery = $('.gallery');
+
+		// $gallery.poptrox({
+		// 	baseZIndex: 10001,
+		// 	useBodyOverflow: false,
+		// 	usePopupEasyClose: false,
+		// 	overlayColor: '#1f2328',
+		// 	overlayOpacity: 0.65,
+		// 	usePopupDefaultStyling: false,
+		// 	usePopupCaption: true,
+		// 	popupLoaderText: '',
+		// 	windowMargin: 50,
+		// 	usePopupNav: true
+		// });
+
+		const emailInput = document.getElementById("emailInput");
+		emailInput.value = '7351f711-2acf-446a-916e-358fa38c02fc';
+
+		// Hack: Adjust margins when 'small' activates.
+			breakpoints.on('>small', function() {
+				$gallery.each(function() {
+					// $(this)[0]._poptrox.windowMargin = 50;
+				});
 			});
+
+			breakpoints.on('<=small', function() {
+				$gallery.each(function() {
+					$(this)[0]._poptrox.windowMargin = 5;
+				});
+			});
+
+	});
+
+	// Section transitions.
+	if (browser.canUse('transition')) {
+
+		var on = function() {
+
+			// Galleries.
+				$('.gallery')
+					.scrollex({
+						top:		'30vh',
+						bottom:		'30vh',
+						delay:		50,
+						initialize:	function() { $(this).addClass('inactive'); },
+						terminate:	function() { $(this).removeClass('inactive'); },
+						enter:		function() { $(this).removeClass('inactive'); },
+						leave:		function() { $(this).addClass('inactive'); }
+					});
+
+			// Generic sections.
+				$('.main.style1')
+					.scrollex({
+						mode:		'middle',
+						delay:		100,
+						initialize:	function() { $(this).addClass('inactive'); },
+						terminate:	function() { $(this).removeClass('inactive'); },
+						enter:		function() { $(this).removeClass('inactive'); },
+						leave:		function() { $(this).addClass('inactive'); }
+					});
+
+				$('.main.style2')
+					.scrollex({
+						mode:		'middle',
+						delay:		100,
+						initialize:	function() { $(this).addClass('inactive'); },
+						terminate:	function() { $(this).removeClass('inactive'); },
+						enter:		function() { $(this).removeClass('inactive'); },
+						leave:		function() { $(this).addClass('inactive'); }
+					});
+
+			// Contact.
+				$('#contact')
+					.scrollex({
+						top:		'50%',
+						delay:		50,
+						initialize:	function() { $(this).addClass('inactive'); },
+						terminate:	function() { $(this).removeClass('inactive'); },
+						enter:		function() { $(this).removeClass('inactive'); },
+						leave:		function() { $(this).addClass('inactive'); }
+					});
+
+		};
+
+		var off = function() {
+
+			// Galleries.
+				$('.gallery')
+					.unscrollex();
+
+			// Generic sections.
+				$('.main.style1')
+					.unscrollex();
+
+				$('.main.style2')
+					.unscrollex();
+
+			// Contact.
+				$('#contact')
+					.unscrollex();
+
+		};
+
+		breakpoints.on('<=small', off);
+		breakpoints.on('>small', on);
+
+	}
+
+	// Events.
+	var resizeTimeout, resizeScrollTimeout;
+
+	$window
+		.on('resize', function() {
+
+			// Disable animations/transitions.
+				$body.addClass('is-resizing');
+
+			clearTimeout(resizeTimeout);
+
+			resizeTimeout = setTimeout(function() {
+
+				// Update scrolly links.
+					$('a[href^="#"]').scrolly({
+						speed: 1500,
+						offset: $header.outerHeight() - 1
+					});
+
+				// Re-enable animations/transitions.
+					setTimeout(function() {
+						$body.removeClass('is-resizing');
+						$window.trigger('scroll');
+					}, 0);
+
+			}, 100);
+
+		})
+		.on('load', function() {
+			$window.trigger('resize');
+		});
 
 });

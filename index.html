@@ -153,9 +153,12 @@
 								<a href="https://axisandalliesassistant.firebaseapp.com/" class="image fit" target="_blank"><img src="images/myWorks/aaa.png" title="aaa" alt="aaa" /></a>
 							</article>
 
-							<article class="from-left z-app-article">
+							<article class="from-left z-app-article media-container" id="hoverContainer-zilla">
 								<h3 style="position: absolute;z-index: 1;background-color: #ffffff6e;padding: 10px;width: 100%;font-weight: 100;border-top: 1px solid black;border-bottom: 1px solid black; border-right: 1px solid;">ZILLA</h3>
-								<a href="https://zilla-62c50.web.app/" class="image fit" target="_blank"><img src="images/myWorks/zilla.png" title="Zilla" alt="zilla" /></a>
+								<a href="https://zilla-62c50.web.app/" class="image fit" target="_blank">
+									<img id="previewImg" class="preview-image" src="images/myWorks/zilla.png" title="Zilla" alt="zilla" />
+									<video src="images/Zilla-2026.mp4" class="hover-video" id="hoverVid-zilla" muted loop playsinline></video>
+								</a>
 							</article>
 
 							<article class="from-right">
@@ -176,14 +179,18 @@
 							<!-- <article class="from-right">
 								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
 							</article> -->
-							<article class="from-left">
-								<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
+							<article class="from-left media-container" id="hoverContainer-fm">
+								<h3 style="position: absolute;z-index: 1;background-color: #ffffff6e;padding: 10px;width: 100%;font-weight: 100;border-top: 1px solid black;border-bottom: 1px solid black; border-right: 1px solid;">Angular FoodMine</h3>
+								<a href="images/myWorks/FoodMineLanding.png" class="image fit">
+									<img id="previewImg" class="preview-image" src="images/myWorks/FoodMineLanding.png" title="FoodMine" alt="FoodMine APP" />
+									<video src="images/FoodMine-2026.mp4" class="hover-video" id="hoverVid-fm" muted loop playsinline></video>
+								</a>
 							</article>
 							<article class="from-right">
 								<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
 							</article>
 						</div>
-						<h3 style="margin: 15px; font-size: 24px;">Learn the back story of each Project!</h3>
+						<h3 style="margin: 15px; font-size: 24px;">Learn more about each Project</h3>
 
 						<button class="accordion">Customers Managment Applcation (CMS)</button>
 						<div class="panel">
@@ -221,6 +228,15 @@
 						<div class="panel">
 							<p>
 								A simple e-commerce application built with <span style="color: #62D0EC;padding: 0 4px;">VUE.JS</span> and <span style="color: #167e1e;padding: 0 4px;">Node.js</span>. Features include dynamic product filtering, sorting, and pagination, providing a smooth and responsive shopping experience.
+							</p>
+						</div>
+
+						<button class="accordion">FoodMine</button>
+						<div class="panel">
+							<p>
+								FoodMine is a food ordering application built with <span style="color: red; padding: 0 4px;">Angular</span>. Showcasing modern front-end development practices using typescript and a component-driven architecture. The application integrates with a weather API through HTTP requests from a service to provide a unique grilling recommendation feature based on the user's local weather conditions, form the service this data gets handed over to a Global Shared service for other components to inherent. Geolocation is used to determine the user's location, with a fallback to New Orleans when location data is unavailable.
+								The project leverages many core Angular concepts, including Components, Services, Routing, Activated Routes, Dependency Injection, Models, RxJS Observables, Pipes, Effects, Computed Signals, and an Attribute Directive -- This consists of A custom dynamic tooltip directive was also developed to enhance the user experience.
+								Users can quickly browse menu items using the built-in search and tagging system, while the shopping cart provides real-time updates for item quantities, removals, and pricing. Cart totals are automatically recalculated through Angular's reactive data-binding system, ensuring the user interface remains synchronized with the underlying application state.
 							</p>
 						</div>
 				</div>
@@ -262,7 +278,7 @@
 							<!-- <a href="/email" style="height: 50px; width: 120px; background-color: red; padding: 2px;" class="btn" id="sendEmail">Send</a> -->
 							<!-- <div style="height: 50px; width: 120px; background-color: red; padding: 2px;" class="btn" id="sendEmail">Send</div> -->
 							<ul class="actions special">
-								<li><input type="submit" value="Send Message" id="sendEmail" /></li>
+								<li><input type="submit" value="Send Message" /></li>
 							</ul>
 						</form>
 					</div>

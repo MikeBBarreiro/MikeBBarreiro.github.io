@@ -2621,3 +2621,37 @@ body.is-touch .main {
 	top:0;
   	background-repeat: no-repeat;
 }
+
+/* Video hovering Styling */
+.media-container {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Make both elements fill the container completely */
+.preview-image, .hover-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Hide the video by default */
+.hover-video {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease; /* Adds a clean cross-fade effect */
+}
+
+/* When the container is hovered, show the video and hide the image */
+.media-container:hover .hover-video {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.media-container:hover .preview-image {
+  opacity: 0;
+}
