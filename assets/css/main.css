@@ -2623,11 +2623,11 @@ body.is-touch .main {
 }
 
 /* Video hovering Styling */
-.media-container {
+/* .media-container {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-}
+} */
 
 /* Make both elements fill the container completely */
 .preview-image, .hover-video {
